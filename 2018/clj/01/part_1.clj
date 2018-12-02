@@ -1,6 +1,6 @@
 #!/usr/bin/env clojure
 
-(ns part_1
+(ns part-1
   "--- Day 1: Chronal Calibration ---
 
   \"We've detected some temporal anomalies,\" one of Santa's Elves at the
@@ -46,7 +46,7 @@
   of the changes in frequency have been applied? "
   (:require [clojure.java.io :as io]))
 
-(with-open [input (io/reader "input")]
+(with-open [input (io/reader "input.txt")]
   (->> (line-seq input)
        (map #(Integer/parseInt %))
        (reduce + 0)

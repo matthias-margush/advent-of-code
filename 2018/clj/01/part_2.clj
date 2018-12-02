@@ -28,7 +28,7 @@
   twice."
   (:require [clojure.java.io :as io]))
 
-(with-open [input (io/reader "input")]
+(with-open [input (io/reader "input.txt")]
   (->> (line-seq input)
        (map #(Integer/parseInt %))
        (cycle)
